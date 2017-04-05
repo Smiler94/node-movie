@@ -7,8 +7,7 @@ block content
                 .col-md-2
                     .thumbnail
                         a(href="/movie/#{item._id}")
-                            img(src="#{item.poster}", alt="#{item.titile}")
-                        .caption
+                            img(src="#{item.poster}", alt="#{item.title}")
+                        div(class="caption", style="text-align:center")
                             h3 #{item.title}
-                            p: a.btn.btn-primary(href="/movie/#{item._id}", role="button")
-                                观看预告片
+                            p: a.btn.btn-primary(href="/movie/#{item._id}", role="button") 观看预告片
